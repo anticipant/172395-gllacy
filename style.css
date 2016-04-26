@@ -1,7 +1,9 @@
 body {
     font-family: roboto;
     font-size: 16px;
-/*    color: #ffffff;*/
+    color: #ffffff;
+    background-color: #849d8f;
+    margin: 0;
 }
 h1 {
     font-size: 35px;
@@ -18,6 +20,69 @@ h3 {
     line-height: 30px;
 /*    font-weight: 500;*/
 }
-.breadcrumb li:nth-child(-n+2):after {
+.breadcrumb li:not(:last-child)::after {
     content: "»"
+}
+
+
+.container {
+    width: 1200px;
+    padding: 0 27px;
+    margin: 0 auto;
+}
+.main-logo {
+    float: left;
+}
+.main-navigation {
+    float: left;
+    width: 670px;
+}
+
+.user-block {
+    float: right;
+    width: 296px;
+    text-align: right;
+/*    background-color: red;*/
+    margin-top: 18px;
+}
+.user-block-interactive>a {
+    display: inline-block; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.search {
+    width: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #9fb4a9 url(img/header/loupe.svg) no-repeat 50% 50%;
+}
+.login {
+    width: 76px;
+    padding-right: 16px;
+    margin-right: 10px;
+    border-radius: 16px;
+    background: #9fb4a9 url(img/header/logon.svg) no-repeat 16px 50%; 
+}
+.basket {
+    width: 82px;
+    padding-right: 35px;
+    border-radius: 16px;
+    background: #9fb4a9 url(img/header/empty_basket.svg) no-repeat 16px 50%; 
+}
+.telephone {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.main-navigation-menu>li{
+    display: inline-block;
+    margin-right: 29px;    
+}
+.main-navigation-submenu li {
+    display: none;
 }
