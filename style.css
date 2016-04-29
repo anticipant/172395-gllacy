@@ -20,13 +20,18 @@ h3 {
     line-height: 30px;
 /*    font-weight: 500;*/
 }
+
 .breadcrumb li:not(:last-child)::after {
     content: "»"
 }
-
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .container {
-    width: 1200px;
+    width: 1146px;
     padding: 0 27px;
     margin: 0 auto;
 }
@@ -37,7 +42,6 @@ h3 {
     float: left;
     width: 670px;
 }
-
 .user-block {
     float: right;
     width: 296px;
@@ -85,4 +89,117 @@ h3 {
 }
 .main-navigation-submenu li {
     display: none;
+}
+/*===MAIN===*/
+.slider {
+    background-color: #b24545;
+    
+    margin: 0 auto;
+    padding: 0;
+}
+.slider1 {
+    background-color: #912929;
+    
+    display: block;
+    margin: 0 auto;
+}
+.slider-features1 {
+    background-color: #520606;
+    
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;    
+}
+.slider-btn {
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.promo {
+    background-color: #a5477a;
+    
+    width: 560px;
+    min-height: 229px;
+    
+}
+.jam {
+    float: left;
+}
+.chocolate {
+    float: right
+}
+
+.popular {
+    font-size: 0px;
+    margin-top: 40px;
+}
+.popular-ice {
+    background-color: #bf4d4d;
+    
+    display: inline-block;
+    width: 267px;
+    padding: 0;
+    margin: 0;
+    margin-right: 26px;
+    font-size: 16px;
+    
+}
+.popular-chocolate {
+    margin-right: 0;
+}
+
+.about-us {
+    background-color: #fd9100;
+    
+    width: 1146px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 0px;
+}
+.about-us-left, 
+.about-us-right {
+    background-color: #db8547;
+    
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    margin-right: auto;
+    width: 560px;
+}
+.about-us-right {
+    margin: 0;
+    margin-left: 26px;
+
+}
+
+.news {
+    background-color: #a5477a;
+    
+    width: 560px;
+    min-height: 229px;   
+}
+.blog {
+    float: left;
+}
+.subscription {
+    float: right;
+}
+.bl-ss {
+    margin-top: 40px;    
+}
+
+.index {
+    margin-top: 40px;  
+}
+.index-map {
+    width: 1200px;
+    margin: 0 -27px;
+    
+}
+.index-adress {
+    background-color: #000000;
+    float: right;    
 }
