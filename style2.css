@@ -1,0 +1,16 @@
+/*~~~~ radio ~~~~*/
+
+
+.fatness-radio label {
+    padding-left: 25px;
+    background-color: #836969;
+    
+}
+#fatness-radio1:checked ~ .fatness-radio label[for="fatness-radio1"] {
+    padding-left: 50px;
+    background-color: #ac1e1e;
+    
+} 
+
+
+/*~~~~ radio END ~~~~*/
