@@ -22,7 +22,7 @@
                     
                         <ul class="main-navigation-submenu">
                             <li><a class="submenu-point" href="#">Новинки</a><hr></li>
-                            <li><a class="submenu-point" href="#">Сливочное</a></li>
+                            <li><a class="submenu-point" href="catalog.html">Сливочное</a></li>
                             <li><a class="submenu-point" href="#">Щербеты</a></li>
                             <li><a class="submenu-point" href="#">Фруктовый лед</a></li>
                             <li><a class="submenu-point" href="#">Мелорин</a></li>
@@ -34,17 +34,29 @@
             </nav>
             <div class="user-block">
                 <div class="user-block-interactive">
-                    
-<!--                    <form action="#" method="post">-->
-                       
-                        <a href="" class="search a-btn">.</a>
-<!--                        <input type="text" name="search" id="search-field" value="Что ищем?">-->
+                    <form action="#" method="post">
+                        
+                        <a href="" class="search a-btn">Поиск</a>
+                        <div class="search-wrapper">
+                            <div class="search-wrapper-block">
+                            <input type="text" name="search" id="search-field" placeholder="Что ищем?">
+                            </div>
+                        </div>
                         
                         <a href="#" class="login a-btn">Вход</a>
-<!--                        <input type="text" id="login-field" value="Электронная почта">-->
-<!--                        <input type="password" class="password-field" value="Пароль">-->
+                        <div class="login-wrapper">
+                            <div class="login-wrapper-block">
+                                <input type="text" id="login-field" placeholder="Электронная почта">
+                                <input type="password" class="password-field" placeholder="Пароль">
+                                <a href="#" class="login-wrapper-btn">Войти</a>
+                                <a href="#" class="login-wrapper-url">Забыли пароль?</a><br>
+                                <a href="#" class="login-wrapper-url">Новая регистрация</a>
+                            </div>
+                        </div>
+                        
                         <a href="#" class="basket a-btn">Пусто</a>
-<!--                    </form>-->
+                    
+                    </form>
                 </div>
                 <div class="user-block-info">
                     <p>С 10 до 20, ежедневно <span class="telephone"><br>8 812 450-25-25</span></p>
@@ -184,9 +196,10 @@
             <section class="footer-copyright mf">
                 <img src="img/footer/htmlacademy.svg" alt="htmlacademy"><br>
                 
-                <p>Сделано в <a class="copyright-url" href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+                <p>Сделано в <a class="copyright-url" href="www.htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
             </section>
     </footer>
     </div>
+    <div class="bg"></div>
   </body>
 </html>

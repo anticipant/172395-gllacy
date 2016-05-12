@@ -32,17 +32,45 @@
             <div class="user-block">
                 <div class="user-block-interactive">
                     
-                    <form action="#" method="post" class="suka">
-                            <a href="" class="search a-btn">Поиск</a>
+                    <form action="#" method="post">
+                       
+                        <a href="" class="search a-btn">Поиск</a>
                         <div class="search-wrapper">
                             <div class="search-wrapper-block">
                             <input type="text" name="search" id="search-field" placeholder="Что ищем?">
                             </div>
                         </div>
+                        
                         <a href="#" class="login a-btn">Вход</a>
-<!--                        <input type="text" id="login-field" value="Электронная почта">-->
-<!--                        <input type="password" class="password-field" value="Пароль">-->
+                        <div class="login-wrapper">
+                            <div class="login-wrapper-block">
+                                <input type="text" id="login-field" placeholder="Электронная почта">
+                                <input type="password" class="password-field" placeholder="Пароль">
+                                <a href="#" class="login-wrapper-btn">Войти</a>
+                                <a href="#" class="login-wrapper-url">Забыли пароль?</a><br>
+                                <a href="#" class="login-wrapper-url">Новая регистрация</a>
+                            </div>
+                        </div>
+                        
                         <a href="#" class="full-basket a-btn">2 товара</a>
+                        <div class="full-basket-wrapper">
+                            <div class="full-basket-wrapper-block">
+                                <section class="product1 product">
+                                    <div class="product-title">Пломбир с апельсиновым джемом</div>
+                                    <div class="product-order">1,5кг х 200 руб.</div>
+                                    <div class="product-price">300 руб.</div>
+                                </section>
+                                <section class="product2 product">
+                                    <div class="product-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+                                    <div class="product-order">1,5кг х 300 руб.</div>
+                                    <div class="product-price">450 руб.</div>  
+                                </section>
+                                <hr>
+                                <p class="result">Итого:750 руб.</p>
+                                <a href="#" class="full-basket-btn">Оформить заказ</a>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
                 <div class="user-block-info">
@@ -108,8 +136,7 @@
                     </div>
                 </div>
                 <div class="filter-fillers filter-block">
-                    <div class="filter-text">Наполнители:   
-                    </div>
+                    <div class="filter-text">Наполнители:</div>
                     <div class="filter-fillers-wrapper">
                         <input id="fillers-choice1" type="checkbox" name="" checked>                <label for="fillers-choice1">шоколадные</label>
                         <input id="fillers-choice2" type="checkbox" name="sugar powder" checked>    <label for="fillers-choice2">сахарные присыпки</label>
@@ -228,13 +255,8 @@
             </section>
             <section class="footer-copyright mf">
                 <img src="img/footer/htmlacademy.svg" alt="htmlacademy"><br>
-                <p>Сделано в <a class="copyright-url" href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+                <p>Сделано в <a class="copyright-url" href="www.htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
             </section>
     </footer>
   </body>
 </html>
-
-
-<!--
-<img src="http://placehold.it/150x100">
-<img src="img/logo.png" width="100" height="50" alt="Глейси">-->
