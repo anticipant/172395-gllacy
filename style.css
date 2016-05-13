@@ -40,6 +40,8 @@ body > input[type="radio"] {
   clear: both;
 }
 
+
+
 /*===HEADER===*/
 
 .container {
@@ -252,7 +254,7 @@ body > input[type="radio"] {
     border-radius: 3px;
     padding: 9px 14px;
     width: 281px;
-    color: #999999;
+    color: #323232;
     
     
     
@@ -306,7 +308,7 @@ body > input[type="radio"] {
     margin-top: 20px;
     font-size: 14px;
     line-height: 24px;
-    color: #999999;
+    color: #323232;
     
 }
 .login-wrapper-btn {
@@ -374,11 +376,16 @@ body > input[type="radio"] {
     width: 72px;
     padding-left: 45px;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.2) url(img/header/full_basket.svg) no-repeat 16px 50%; 
+    color: #313131;
+    background: #f7f6f3 url(img/header/full_basket.svg) no-repeat 16px 50%; 
     text-align: left;
 }
+.full-basket-wrapper:hover,
+.full-basket:hover+.full-basket-wrapper {
+    display: block;
+}
 .full-basket-wrapper {
-/*    display: none;*/
+    display: none;
     position: absolute;
     margin-top: -2px;
     padding-top: 6px;
@@ -393,10 +400,11 @@ body > input[type="radio"] {
     z-index: 2;
     background-color: #f8f7f4;
     border-radius: 3px;
-    min-height: 242px;
+    min-height: 222px;
     width: 520px;
     padding: 10px;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+
     
 } 
 .result {
@@ -408,11 +416,6 @@ body > input[type="radio"] {
     margin-top: 16px
     
 }
-.product1,
-.product2 {
-    height: 65px;
-    background-color: red;
-}
 .product div {
     display: inline-block;
     vertical-align: top;
@@ -421,25 +424,40 @@ body > input[type="radio"] {
     line-height: 16px;
     font-weight: 700;
 }
+.product1 {
+    background: url(img/header/%D0%A5.svg) no-repeat 5px 50%;
+}
+.product2 {
+    background: url(img/header/%D0%A5.svg) no-repeat 5px 23px;
+}
+.product img {
+    margin-top: 10px;
+}
 .product-title {
-    display: block;
+    display: inline-block;
     padding: 0;
     padding-right: 30px;
-    padding-left: 80px;
-    background-color: #fff;
-    width: 208px;
+    padding-left: 14px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    width: 219px;
+    text-align: left;
+    
 }
 .product-order {
     padding: 0;
     padding-right: 30px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+
 }
 .product-price {
     margin: 0;
     padding: 0;
     padding-right: 25px;
-    
+    padding-top: 19px;
+    padding-bottom: 20px;
 }
-
 .full-basket-btn {
     display: inline-block;
     font-size: 18px;
@@ -1410,3 +1428,112 @@ background-color: #8996a6;
 #btn-3:checked ~ .bg { 
 background-color: #9d8b84; 
 } 
+
+.feedback textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #c7c6c5;
+    box-shadow: 0px 0px 0px 1px #c7c6c5 INSET;
+}
+
+.feedback textarea:hover,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    color: #323232;
+    border-color: #8fbdec;
+    box-shadow: 0px 0px 0px 1px #8fbdec INSET;
+}
+
+.feedback {
+    display: none;
+    position: absolute;
+    display: block;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-top: 20px;
+    border-radius: 8px;
+    margin: 0;
+    left: 3%;
+    top: 8%;
+    background:  #f8f7f4 url(img/header/%D0%A5.svg) no-repeat 444px 15px;
+}
+.feedback p {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #323232;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 19px;
+    margin-top: 0px;
+}
+
+.feedback input[type="text"] {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: block;
+    width: 251px;
+    padding: 0;
+    padding-left: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+    
+    font-size: 16px;
+    line-height: 24px;
+}
+.feedback textarea {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: block;
+    width: 412px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 14px;
+    padding-top: 6px;
+/*    padding-bottom: 6px;*/
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+    
+}
+.feedback input[type="submit"] {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px 23px;
+    margin: 0;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 27px;
+    border-radius: 23px;
+    border: none;
+  
+    background: #f26843;
+    background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+.feedback input[type="submit"]:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.feedback input[type="submit"]:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
