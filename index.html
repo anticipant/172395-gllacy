@@ -12,7 +12,7 @@
     <input type="radio" id="btn-3" name="toggle">
     <div class="site-wrapper">
         <header class="main-header">
-        <div class="container clearfix">
+            <div class="container clearfix">
             <div class="main-logo">
                 <img src="img/header/logo_154x64.svg" width="153" height="63" alt="Глейси шоп">
             </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-    </header>
+        </header>
         <main class="container">
         <div class="slider">
           <div class="slide" id="slide1">
@@ -165,14 +165,14 @@
         </div>
         <div class="index">
             <div class="index-map">
-                <img src="img/map.gif" alt="карта" width="1200" height="430">
+                <img class="map-img" src="img/map.gif" alt="карта" width="1200" height="430">
+                <div class="map-block" id="yandex-map"></div>
             </div>
             <div class="index-adress">
                 <p>Адрес главного офиса и<br> офлайн магазина: <br> <span class="street">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                 <p>Для заказов по телефону:<span class="telephone">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-                <a class="btn" href="form.html">Форма обратной связи</a>
+                <a class="btn js-feedback" href="form.html">Форма обратной связи</a>
             </div>    
-            
         </div>
     </main>
         <footer class="main-footer">
@@ -199,13 +199,31 @@
             </section>
     </footer>
     </div>
-    <form action="post" class="feedback">
-        <p>Мы обязательно вам ответим!</p>
-        <input type="text" placeholder="Как вас зовут?">
-        <input type="text" placeholder="Ваша почта для ответа">
-        <textarea  rows="6" placeholder="Напишите что-нибудь..."></textarea>
-        <input type="submit" value="Отправить">
-    </form>
+    <div class="feedback-bg">
+       <form action="post" class="feedback">
+            <img src="/img/header/%D0%A5.svg" alt="" class="feedback-close" width="11" height="11">
+            <p>Мы обязательно вам ответим!</p>
+            <input type="text" placeholder="Как вас зовут?" required name="login">
+            <input type="text" placeholder="Ваша почта для ответа" required name="email">
+            <textarea  rows="6" placeholder="Напишите что-нибудь..."></textarea>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+     
     <div class="bg"></div>
+    
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=aoNJW2sYD0AlhrzUnKd7Mfa28ysiI8RN&width=1200&height=430&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map">
+//      
+//        var map = document.querySelector(".map-img");
+//       
+//        addEventListener("", function() {
+//            map.classList.add("map-img-hidden");
+//        });
+//        
+//            
+//        map.classList.add("map-img-hidden");
+//        
+    </script>
+    <script src="js/form.js"></script>
   </body>
 </html>
