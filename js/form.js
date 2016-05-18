@@ -1,26 +1,21 @@
-      var link = document.querySelector(".js-feedback");
-      var popup = document.querySelector(".feedback-bg");
-      var popup2 = document.querySelector(".feedback");  
-      var close = popup.querySelector(".feedback-close");
+    var link = document.querySelector(".js-feedback");
+    var popup = document.querySelector(".feedback-bg");
+    var popup2 = document.querySelector(".feedback");  
+    var close = popup.querySelector(".feedback-close");
+    var map = document.querySelector(".map-img");
 
-
+    map.classList.add("map-img-hidden");
     link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("feedback-show");
         popup2.classList.add("feedback-animation");
-        if (storage) {
-          login.value = storage;
-          email.focus();
-        } else {
-          login.focus();
-        }
       });
 
     close.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("feedback-show");
       });
-        
+    
 //    popup.addEventListener("click", function(event) {
 //        event.preventDefault();
 //        popup.classList.remove("feedback-show");
