@@ -1,6 +1,5 @@
     var link = document.querySelector(".js-feedback");
     var popup = document.querySelector(".feedback");
-//    var popup2 = document.querySelector(".feedback-bg");  
     var close = popup.querySelector(".feedback-close");
     var bg = document.querySelector(".feedback-bg")
     
